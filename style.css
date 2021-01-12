@@ -1,0 +1,95 @@
+canvas{
+    border: 2px solid black;
+}
+
+.pannels{
+    display: flex;
+
+}
+
+.imageLoad{
+    margin-left: 10px;
+    padding: 0;
+}
+
+body{
+    background-image: url(bg1.jpg);
+    font-style: italic;
+    font-family:Arial, serif;
+    font-weight: bold;
+}
+
+.break{
+	color: red;
+}
+
+#winscreen{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+#box{
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-left: 400px;
+    height: 300px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 2px 2px 8px black;
+    background-color: white;
+}
+
+.heading{
+    background-color: #339966;
+    color: white;
+    font-size: larger;
+    padding: 5px;
+}
+
+.content{
+    margin-top: 30px;
+}
+
+#confirmBtn{
+    height: 25px;
+    width: 80px;
+    border-radius: 0px;
+    background-color: #339966;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 400px;
+
+}
+
+#icon{
+    width:100px;
+    height:100px;
+    margin-left: 200px;
+    border-radius: 50%;
+    background-image: url(win.png);
+}
+
+
+#drawBtn{
+    height: 25px;
+    width: 80px;
+    border-radius: 0px;
+    background-color: #339966;
+    border: none;
+}
+
+#drawBtn:hover{
+    background-color: #339955;
+}
+
+.about{
+    width: 480px;
+    border: 2px solid black;
+    background-color: red;
+}
