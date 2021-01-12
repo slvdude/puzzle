@@ -101,6 +101,7 @@ var img = new Image();
    var reader = new FileReader();
    reader.onload = function (e) {
      document.getElementById("preview").setAttribute("src", e.target.result);
+     localStorage.setItem('5', e.target.result);
    };
    reader.readAsDataURL(input.files[0]);
  }
@@ -116,18 +117,6 @@ var img = new Image();
       drawTiles();
   }
 
-document.getElementById('bannerImg').addEventListener("change", function(){
-    let reader = new FileReader();
-
-    reader.addEventListener("load", () => {
-        console.log(reader.result);    
-        localStorage.setItem('5', reader.result);    
-    });
-    
-
-    reader.readAsDataURL(this.files[0]);
-   
-});
 
 document.addEventListener("DOMContentLoaded", () => {
     const recentImageDataUrl = localStorage.getItem("5");
