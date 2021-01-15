@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puzzle</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="pannels">
@@ -12,6 +12,17 @@
           <p><input  type="file" onchange="previewImage(this);"></p>
           <p><button id="drawBtn" onclick="setImage();">Отрисовать</button></p>
       </div> 
+      <div class="select-image">
+          <select name="" id="select">
+            <option value="0">Выберите картинку</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <p>Выберите изображение из локального хранилища.</p>
+      </div>
     </div>
       <div id="main" class="main">
         <canvas id="puzzle" width="480px" height="480px"></canvas>
@@ -31,7 +42,8 @@
           </div>
         </div>
       </div>
-      <p><img id="preview" class="image"></p>
-    <script src="main.js"></script>
+      <img src="" id="preview" class="image">
+      <script src="js/functions.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

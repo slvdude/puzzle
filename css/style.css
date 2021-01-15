@@ -13,7 +13,7 @@ canvas{
 }
 
 body{
-    background-image: url(bg1.jpg);
+    background-image: url("../images/bg1.jpg");
     font-style: italic;
     font-family:Arial, serif;
     font-weight: bold;
@@ -72,7 +72,7 @@ body{
     height:100px;
     margin-left: 200px;
     border-radius: 50%;
-    background-image: url(win.png);
+    background-image: url("puzzle/images/winscr.png");
 }
 
 
@@ -92,4 +92,22 @@ body{
     width: 480px;
     border: 2px solid black;
     background-color: red;
+}
+
+.pannels{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.select-image{
+    border: 2px solid red;
+}
+
+.image {
+display: block;
+width: 480px;
+height: 480px;
+max-width: 480px;
+max-height: 480px;
 }
